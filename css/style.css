@@ -43,6 +43,10 @@ header {
     align-items: center;
 }
 
+.welcomeheader {
+    display: block;
+}
+
 
 /* Navbar styling */
 nav ul {
