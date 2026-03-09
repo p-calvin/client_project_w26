@@ -38,7 +38,6 @@ header {
     background-color: #00274C;
     color: #ffffff;
 
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -49,6 +48,13 @@ header {
 
 
 /* Navbar styling */
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 nav ul {
     display: flex;
     gap: 0.7rem;
