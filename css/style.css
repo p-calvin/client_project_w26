@@ -1,0 +1,432 @@
+/* Body-wide styling */
+body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+
+/* Skip to main styling */
+.skip {
+    position: absolute;
+    top: -65px;
+    color: #ffffff;
+}
+
+.skip:focus-visible {
+    top: 25px;
+    color: #ffffff;
+}
+
+*:focus {
+    border: dashed 5px #FFCB05;
+}
+
+
+
+/* Header styling */
+header img {
+    display: block;
+    width: 4rem;
+    height: auto;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #00274C;
+    color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Navbar styling */
+nav ul {
+    display: flex;
+    gap: 0.7rem;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+}
+
+header nav a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    color: #ffffff;
+}
+
+nav li {
+    margin: 0rem;
+    text-align: center;
+    background-color: #2F65A7;
+    border-radius: 3px;
+    align-content: center;
+}
+
+nav ul a:hover {
+    color: #000000;
+}
+
+/* Highlights active navbar links to signify which page is active */
+
+nav a.active {
+    background-color: #FFCB05;
+    color: #00274C;
+    font-weight: bold;
+    border: 3px solid #FFCB05;
+    border-radius: 3px;
+}
+
+/* Main styling */
+
+main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Basic header styling */
+
+h1 {
+    color: #ffffff;
+    margin-bottom: 2rem;
+    overflow-wrap: break-word;
+    background-color: #00274C;
+    font-size: 1.5rem;
+    text-align: left;
+    padding-right: 0.5rem;
+}
+
+h1.highlight {
+    color: #ffffff;
+}
+
+h2 {
+    color: #00274C;
+    margin-bottom: 2rem;
+    overflow-wrap: break-word;
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+h3 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+h4 {
+    background-color: #2F65A7;
+    color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* Base paragraph styling */
+
+p {
+    line-height: 130%;
+    overflow-wrap: break-word;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+
+/* Welcome section styling */
+.welcome {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: #00274C;
+    align-items: center;
+    padding: 1rem 0;
+    gap: 0.5rem;
+}
+
+.welcome h1 {
+    margin: 0;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+
+/* Base image styling */
+
+div img {
+    max-width: 4rem;
+    margin: 1rem;
+}
+
+
+/* Base list styling */
+
+li {
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+
+/* Description section styling */
+
+.description {
+    background-color: #2F65A7;
+    color: #ffffff;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+
+/* Quick guide styling */
+
+h2.quickguide {
+    color: #ffffff;
+    padding-top: 1rem;
+    font-size: 1.75rem;
+}
+
+.quickguide {
+    background-color: #00274C;
+    color: white;
+    padding-bottom: 0.5rem;
+}
+
+.quickguide a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.quickguide a:hover {
+    text-decoration: underline;
+    color:#FFCB05;
+}
+
+.quickguide a:hover {
+    color: #00274C;
+    transition: 0.3s;
+}
+
+.quickguide ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    list-style: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.quickguide li {
+    background-color: #2F65A7;
+    padding: 0.75rem;
+    border-radius: 3px;
+    text-align: center;
+    align-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.quickguide li:hover {
+    background-color: #FFCB05;
+    color: #00274C;
+    transition: 0.3s;
+}
+
+
+/* Highlighted section styling */
+
+div.highlight {
+    background-color: #FFCB05;
+    padding: 1rem;
+}
+
+div.highlight h2 {
+    margin: 0;
+}
+
+div.highlight ul {
+    color: #ffffff;
+}
+
+
+/* Full-width image styling */
+
+.fullwidth{
+    grid-column: 1 / -1;
+}
+
+img.pageimage {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    max-width: 100%;
+}
+
+/* Page section styling */
+
+div.pages {
+    background-color: #00274C;
+    padding-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+div.pages ul {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+div.pages li {
+    padding-top: 1rem;
+    margin-right: 1rem;
+}
+
+div.pages a {
+    color: white;
+}
+
+div.pages a:hover {
+    color: #FFCB05;
+    transition: 0.3s;
+}
+
+
+/* Detailed paragraph styling */
+
+p a {
+    color: #00274C;
+    font-weight: 600;
+}
+
+p a:hover {
+    color: #2F65A7;
+    transition: 0.3s;
+}
+
+
+/* Detailed unordered list styling */
+
+ul a {
+    color: #00274C;
+    font-weight: 600;
+}
+
+ul a:hover {
+    color: #2F65A7;
+    transition: 0.3s;
+}
+
+/* Footer styling */
+
+footer {
+    display: block;
+    background-color: #FFCB05;
+    color: #00274C;
+    font-size: 1rem;
+    padding: 0.75rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+
+/* Helper styling that adds space for paragraphs */
+
+div.basicparagraph {
+    margin-top: 2rem;
+}
+
+
+/* List styling */
+
+div.list{
+   background-color: #00274C;
+   padding-top: 1rem;
+}
+
+.list {
+    background-color: #00274C;
+    color: white;
+    padding-bottom: 0.5rem;
+}
+
+.list a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.list ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    list-style: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.list li {
+    background-color: #2F65A7;
+    padding: 0.75rem;
+    border-radius: 3px;
+    text-align: center;
+    align-content: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.list li.wide {
+    grid-column: 1 / -1;
+    padding: 1.5;
+}
+
+
+/* Helper styling that adds space to divs */
+
+div.spaced {
+    margin-top: 1rem;
+}
+
+
+/* Prefers reduced motion styling */
+
+@media (prefers-reduced-motion: reduce) {
+    .quickguide a:hover {
+        color: #00274C;
+        transition: none;
+    }
+
+    .quickguide li:hover {
+        background-color: #FFCB05;
+        color: #00274C;
+        transition: none;
+    }
+
+    div.pages a:hover {
+        color: #FFCB05;
+        transition: none;
+    }
+
+    p a:hover {
+        color: #2F65A7;
+        transition: none;
+    }
+
+    ul a:hover {
+        color: #2F65A7;
+        transition: none;
+    }
+}

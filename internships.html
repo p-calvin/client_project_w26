@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="css/html5reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+    <div class="welcome">
+      <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+      <h1>Welcome to the UMSI Career Development Resource Hub</h1>
+    </div>
+
     <header>
-    <a href = "">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+      
+      <a href="" class="skip">Skip to Main Content</a>
         <nav>
             <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "resume.html">Resumes</a></li>
-                <li><a href = "networking-connections.html">Networking & Connections</a></li>
-                <li><a href = "internships.html">Internships</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resumes</a></li>
+                <li><a href="networking-connections.html">Networking</a></li>
+                <li><a class="active" href="internships.html">Internships</a></li>
             </ul>
         </nav>
-        <h1>Internships</h1>
     </header>
 
     <!-- Content taken & modified from ChatGPT with the prompt, "Based on the headers I provided and content from the UMSI CDO Canvas Site (linked)
@@ -26,19 +33,28 @@
     <main>
 
         <section>
-            <p> Welcome to the Career Development Office Internship Support hub! Here, you’ll find resources, guidance, 
-                and strategies to help you explore career paths, discover internships and jobs, 
-                prepare for interviews, and make the most of your professional experiences. 
-                Internships are an essential step in applying the skills you learn in the classroom, 
-                building your network, and exploring potential career paths.
-            </p>
+            <div class="description">
+                <h2 class="description">Internship Support</h1>
+            </div>
 
-            <img src="images/internships-2.jpg" alt="A student in a white sweatshirt sits at a table in the Law Library and works on their laptop.">
+            <img class="pageimage" src="images/internships-2.jpg" alt="A student in a white sweatshirt sits at a table in the Law Library and works on their laptop.">
 
-            <h2>Finding an Internship</h2>
+            <div class="basicparagraph">
+                <p> 
+                    Welcome to the Career Development Office Internship Support hub! Here, you’ll find resources, guidance, 
+                    and strategies to help you explore career paths, discover internships and jobs, 
+                    prepare for interviews, and make the most of your professional experiences. 
+                    Internships are an essential step in applying the skills you learn in the classroom, 
+                    building your network, and exploring potential career paths.
+                </p>
+            </div>
+
+            <div class="highlight">
+                <h2>Finding an Internship</h2>
+            </div>
 
             <h3>Online Resources</h3>
-            
+
             <p>The University of Michigan provides a variety of online tools to help you discover
                 internship opportunities:
             </p>
@@ -61,13 +77,18 @@
                 to highlight relevant skills, projects, and experiences.
             </p>
 
-            <h3>Career and Internship Fairs</h3>
 
-            <img src="images/internships-3.jpg" alt="Students and employers gather in a large event hall with banners promoting companies.">
+            <div class="highlight">
+                <h2>Career and Internship Fairs</h2>
+            </div>
 
-            <p>Attending career fairs is a great way to meet employers, ask questions, and explore career options.
-                The Career Development Office hosts multiple fairs each year, including:
-            </p>
+            <img class="pageimage" src="images/internships-3.jpg" alt="Students and employers gather in a large event hall with banners promoting companies.">
+
+            <div class="basicparagraph">
+                <p>Attending career fairs is a great way to meet employers, ask questions, and explore career options.
+                    The Career Development Office hosts multiple fairs each year, including:
+                </p>
+            </div>  
 
             <ul><li><strong>UMSI Career & Internship Fair</strong>: Focused on tech, information science, and data science opportunities.</li></ul>
             <ul><li><strong>University-wide Career Fairs</strong>: Broad exposure to organizations across industries.</li></ul>
@@ -76,13 +97,15 @@
                 It is helpful to prepare a polished resume, practice an elevator pitch, and research companies beforehand to make a strong impression.
             </p>
 
-            <p>You can learn more about Career and Internship Fairs by visiting the <a href="networking-connections.html">Networking and Connections Page</a></p>.
+            <p>You can learn more about Career and Internship Fairs by visiting the <a href="networking-connections.html">Networking and Connections Page.</a></p>
 
         </section>
 
         <section>
 
-            <h2>Interviews</h2>
+            <div class="highlight">
+                <h2>Interviews</h2>
+            </div>
 
             <h3>Interview Prep</h3>
 
@@ -93,13 +116,13 @@
         
             <ul>
                     <li>Review common interview questions for your field. This can include both behavioral and technical questions. For technical practice,
-                        consider using tools like <a href="https://www.w3schools.com" target="_blank">W3Schools</a> or <a href="https://leetcode.com/" target="_blank">Leetcode</a>to practice.
+                        consider using tools like <a href="https://www.w3schools.com" target="_blank">W3Schools</a> or <a href="https://leetcode.com/" target="_blank">Leetcode</a> to practice.
                     </li>
                     <li>Understand your company's mission, products, culture, and value.</li>
                     <li>Utilize the STAR method (Situation, Task, Action, Result) to organize your thoughts and experiences and share their impact.</li>
             </ul>
 
-            <h3>Mock Interviews</h3>
+            <h4>Mock Interviews</h4>
 
                 <p>Mock interviews can be a great way to prepare for your internship or job experiences. 
                     Practicing with a friend, colleague, or family member can lower interview anxiety and 
@@ -144,7 +167,9 @@
 
 
         <section>
-            <h2>Securing your Internship</h2>
+            <div class="highlight">
+                <h2>Securing your Internship</h2>
+            </div>
 
             <h3>Internship Credit</h3>
 
@@ -152,8 +177,6 @@
                 Securing an internship is not only valuable experience, but can count toward your degree program. Speak with
                 an advisor for guidelines and to learn about the credit registration process and internship course.
             </p>
-
-            <h3>Best Practices</h3>
 
             <h4>Starting Strong</h4>
 
