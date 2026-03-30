@@ -61,7 +61,7 @@
         </div>
 
         <div class="quickguide">
-            <h2 class="quickguide">Quick Guide</h2>
+            <h2 class="quickguide" id="qg">Quick Guide</h2>
             <ul>
               <li><a href="https://docs.google.com/document/d/1_1GfDJyVGIgE82MZjVhuWT_aB_2Hcj1NN62FUCXoR_o/edit?tab=t.0" target="_blank">UMSI Resume Guide</a></li>
               <li><a href="https://umich.instructure.com/courses/137916/pages/attend-an-event" target="_blank">Attend a Career Event</a></li>
@@ -128,9 +128,33 @@
     </main>
 
     <footer>
-        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916" target="_blank">UMSI Career Development Office </a></p>
+        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916" target="_blank">UMSI Career Development Office</a> | umsi.careers@umich.edu</p>
+        <br>
+        <a href="https://www.instagram.com/umschoolofinformation" target="_blank"><img class="footer-img" src="images/instagram.svg" alt="Instagram logo."></a><a href="https://www.linkedin.com/school/university-of-michigan---school-of-information/posts/?feedView=all" target="_blank"><img class="footer-img" src="images/linkedin.svg" alt="LinkedIn logo."></a>
+
+        <br>
+        <p>© Copyright <span id="year"></span> by the University of Michigan Career Development Office. All rights reserved.</p>
     </footer>
 
-    
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+
+    <script>
+      const hour = new Date().getHours();
+        let message;
+
+        if (hour < 12) {
+          message = "Good morning! Please schedule a meeting with a CDO advisor by visiting:\nhttps://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach";
+        } else if (hour < 18) {
+          message = "Good afternoon! Please schedule a meeting with a CDO advisor by visiting:\nhttps://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach";
+        } else {
+          message = "Good evening! Please schedule a meeting with a CDO advisor by visiting:\nhttps://umich.instructure.com/courses/137916/pages/talk-to-a-career-coach";
+        }
+
+      alert(message);
+
+  </script>
+</script>
 </body>
 </html>

@@ -203,7 +203,7 @@
           <h2>Resume FAQ</h2>
         </div>
 
-        <div class="basicparagraph">
+        <div class="spaced">
           <ul>
             <li>
               <strong>How long should my resume be?</strong><br>
@@ -251,8 +251,17 @@
       </main>
     
     <footer>
-        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
+        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916" target="_blank">UMSI Career Development Office</a> | umsi.careers@umich.edu</p>
+        <br>
+        <a href="https://www.instagram.com/umschoolofinformation" target="_blank"><img class="footer-img" src="images/instagram.svg" alt="Instagram logo."></a><a href="https://www.linkedin.com/school/university-of-michigan---school-of-information/posts/?feedView=all" target="_blank"><img class="footer-img" src="images/linkedin.svg" alt="LinkedIn logo."></a>
+
+        <br>
+        <p>© Copyright <span id="year"></span> by the University of Michigan Career Development Office. All rights reserved.</p>
     </footer>
+
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
     
   </body>
 

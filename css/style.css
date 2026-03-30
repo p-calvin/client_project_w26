@@ -53,6 +53,7 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 0.5rem;
 }
 
 nav ul {
@@ -123,8 +124,8 @@ h2 {
     margin-bottom: 2rem;
     overflow-wrap: break-word;
     font-size: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     text-align: center;
 }
 
@@ -150,8 +151,8 @@ p {
     line-height: 130%;
     overflow-wrap: break-word;
     margin-bottom: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 
@@ -161,13 +162,13 @@ p {
     grid-template-columns: auto 1fr;
     background-color: #00274C;
     align-items: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
     gap: 0.5rem;
 }
 
 .welcome h1 {
     margin: 0;
-    padding: 0 1rem;
+    padding: 2 1rem;
     text-align: center;
 }
 
@@ -317,13 +318,14 @@ div.pages a:hover {
 
 p a {
     color: #00274C;
-    font-weight: 600;
+    font-weight: 600
 }
 
 p a:hover {
     color: #2F65A7;
     transition: 0.3s;
 }
+
 
 
 /* Detailed unordered list styling */
@@ -352,11 +354,20 @@ footer {
     font-weight: 600;
 }
 
+/* Unordered list base styling */
+ul {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    line-height: 130%;
+}
+
 
 /* Helper styling that adds space for paragraphs */
 
 div.basicparagraph {
     margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 
@@ -403,6 +414,17 @@ div.list{
     padding: 1.5;
 }
 
+/* Footers */
+
+.footer-img {
+        width: 50px;
+        height: auto;
+    }
+
+    .footer-img:hover {
+        opacity: 0.7;
+    }
+
 
 /* Helper styling that adds space to divs */
 
@@ -410,6 +432,46 @@ div.spaced {
     margin-top: 1rem;
 }
 
+/* 404 Page */
+
+.error-page {
+    display: block;
+    background-color: #00274C;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.error-page h1 {
+    font-size: 15rem;
+    justify-self: center;
+    color: #FFCB05;
+}
+
+.error-page p {
+    font-size: 3rem;
+    color: #ffffff;
+    justify-self: center;
+}
+
+.error-page img {
+    display: block;
+    max-width: 500px;
+    align-self: center;
+    margin: 0 auto 5rem auto;
+}
+
+.error-page a {
+    color: white;
+    margin: 3rem;
+    font-size: 2rem;
+    justify-self: center;
+}
+
+.error-page a:hover {
+    color: #FFCB05;
+    transition: 0.3s;
+}
 
 /* Prefers reduced motion styling */
 
@@ -439,4 +501,284 @@ div.spaced {
         color: #2F65A7;
         transition: none;
     }
+}
+
+
+@media (min-width: 500px) {
+    header nav {
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 0.5rem;
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        padding: 0.25rem 0.45rem;
+    }
+
+    main {
+        grid-template-columns: auto;
+    }
+
+    ul {
+        margin-left: 1.5rem;
+    }
+
+    .description p {
+        margin-left: 2.2rem;
+    }
+
+    h2.description {
+        margin-bottom: 1rem;
+    }
+
+    .quickguide ul {
+        margin-left: 0;
+    }
+
+    .pages ul {
+        margin-top: 1.2rem;
+    }
+
+    p {
+        margin-left: 2.2rem;
+    }
+
+    div.spaced {
+        margin-top: 2rem;
+    }
+
+    h2.quickguide {
+        padding-top: 2rem;
+    }
+
+    .list ul {
+        margin-left: 0;
+    }
+
+}
+
+@media (min-width: 1900px) {
+    header img {
+        display: block;
+        height: auto;
+        margin-top: 1.5rem;
+        margin-left: 4rem;
+        max-width: 200px;
+        width: 150px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    header {
+        width: 100%;
+        background-color: #00274C;
+        color: #ffffff;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .welcomeheader {
+        display: block;
+    }
+
+    main .description h2 {
+        font-size: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    main .description p {
+        font-size: 2rem;
+        padding: 2rem;
+        margin-left: 4rem;
+    }
+
+    main .spaced h2 {
+        font-size: 3rem;
+        padding-top: 2rem;
+    }
+
+    main .spaced p {
+        font-size: 2rem;
+        padding: 2rem;
+        margin-left: 4rem;
+    }
+
+    main ul {
+        font-size: 2rem;
+        padding: 4rem;
+        padding-top: 0;
+        line-height: 180%;
+    }
+
+    main .highlight h2 {
+        font-size: 3rem;
+        padding: 2rem;
+    }
+
+    main .quickguide p {
+        font-size: 2rem;
+    }
+
+    main .quickguide h2 {
+        font-size: 2.5rem;
+        padding-top: 4rem;
+    }
+
+    main .quickguide ul {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    main .quickguide ul li {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    main .pages ul {
+        font-size: 2rem;
+        padding-left: 4rem;
+    }
+
+    main p {
+        font-size: 2rem;
+        padding: 4rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        line-height: 150%;
+    }
+
+    footer {
+        font-size: 2rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    li {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    /* Navbar */
+
+    header nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 3rem;
+        padding: 3rem;
+        flex-wrap: wrap;
+    }
+
+    header nav a {
+        text-decoration: none;
+        font-size: 2.5rem;
+        font-weight: 600;
+        display: block;
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        color: #ffffff;
+    }
+
+    nav li {
+        margin: 0rem;
+        text-align: center;
+        background-color: #2F65A7;
+        border-radius: 3px;
+        align-content: center;
+    }
+
+    nav ul a:hover {
+        color: #000000;
+    }
+
+    .footer-img {
+        width: 80px;
+        height: auto;
+    }
+
+    .footer-img:hover {
+        opacity: 0.7;
+    }
+
+    .basicparagraph p {
+        margin-left: 6rem;
+        padding: 0;
+        line-height: 200%;
+        margin-bottom: 4rem;
+        margin-top: 4rem;
+    }
+
+    .basicparagraph ol {
+        margin-left: 6rem;
+        font-size: 2rem;
+        line-height: 150%;
+        margin-bottom: 4rem;
+    }
+
+    .basicparagraph ul {
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 1rem;
+    }
+
+    .basicparagraph h3 {
+        font-size: 2.5rem;
+    }
+
+    .list ul {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        padding-top: 1rem;
+        margin-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .list ul li {
+        background-color: #FFCB05;
+        color: #000000;
+        font-size: 2.5rem;
+        width: 1200px;
+    }
+
+    .list {
+        padding-bottom: 3rem;
+        padding-top: 4rem;
+    }
+
+
+    h4 {
+        background-color: #FFCB05;
+        color: #000000;
+        font-size: 2.5rem;
+        padding-left: 3rem;
+        font-weight: 400;
+    }
+
+    h3 {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+
 }
